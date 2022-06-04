@@ -1,0 +1,168 @@
+body{
+    font-size: 14px;
+}
+.side-menu, .right-menu {
+    background-color: #21242D;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* Tab Styles Start */
+
+.tabs{
+    background-color: transparent;
+    color: white;
+    margin-right: 20px;
+    border: none;
+}
+.tabs.active{
+    color: #00B9AE;
+    border-bottom: 2px solid #00B9AE;
+    font-weight: bold;
+}
+
+/* Tab Styles Ends */
+
+/* Search bar Styles Starts */
+
+.search {
+    position: relative;
+}
+
+.search input {
+    text-indent: 20px;
+    background-color: #21242D;
+    border-radius: 10px;
+}
+
+.search input:focus, .form-control {
+    color: white;
+    background-color: #21242D;
+    border-color: #21242D;
+    box-shadow: none;
+}
+
+.search .bi-search {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: white;
+}
+.search .bi-funnel {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: white;
+}
+
+/* Search bar Styles Ends */
+
+
+.main-view{
+    background-color: #16181E;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* Carousel Styles Starts */
+
+.carousel-item img{
+    width: 100%;
+    height: 270px;
+    border-radius: 10px;
+}
+
+.carousel-indicators button{
+    width: 8px !important; 
+    height: 8px !important;
+    border-radius: 50%;
+}
+.carousel-indicators button.active{
+    background-color: #00B9AE !important;
+}
+.carousel-caption{
+    top: 10px;
+    left: 10%;
+    right: 0px;
+    text-align: left;
+    font-weight: bold;
+}
+.carousel-watchlist{
+    position: absolute;
+    bottom: 20px;
+    z-index: 999;
+    left: 30px;
+    padding: 0px 25px 7px 25px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    font-weight: bold;
+}
+.carousel-watchnow {
+    position: absolute;
+    bottom: 20px;
+    z-index: 999;
+    right: 30px;
+    background-color: #00B9AE;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-weight: bold;
+
+}
+/* Carousel Styles Ends */
+
+/* Tinymoviez Section styles starts */
+
+.tinymoviez-div .card1{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/tinymoviesimg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    border: none;
+}
+.tinymoviez-div .card2{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/tinymoviesimg2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+.tinymoviez-div .card3{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/tinymoviesimg3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+.tinymoviez-div .bi-star-fill, .tinymoviez-div .bi-star-half{
+    color: #00B9AE;
+}
+
+.tinymoviez-div button{
+    background-color: #00B9AE;
+    padding: 5px 25px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+.tinymoviez-div .bi-plus{
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    padding: 0px 10px 5px 10px;
+}
+
+/* Tinymoviez Section styles ends */
+
+/* Right menu stles start */
+.right-menu .bi-bell{
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    padding: 0px 10px 7px 10px;
+}

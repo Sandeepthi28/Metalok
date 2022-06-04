@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Metalok Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="Dashboadrd.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-2 px-sm-2 px-0 side-menu">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white">
+                    <h1 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white ">
+                        <span class="fs-4 fw-bold d-none d-sm-inline">Dashboard</span>
+                    </h1>
+                    <ul class="nav flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start text-white"
+                        id="menu">
+                        <li class="pt-4">Menu</li>
+                        <li class="nav-item">
+                            <a href="#menu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white">
+                                <i class="fs-5 bi-house-door"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#menu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white">
+                                <i class="fs-5 bi-compass"></i> <span class="ms-1 d-none d-sm-inline">Discover</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#menu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white">
+                                <i class="fs-5 bi-trophy"></i> <span class="ms-1 d-none d-sm-inline">Awards</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#menu4" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white">
+                                <i class="fs-5 bi-patch-check"></i> <span
+                                    class="ms-1 d-none d-sm-inline">Celebrities</span> </a>
+                        </li>
+                        <li class="pt-4">Library</li>
+                        <li class="nav-item">
+                            <a href="#menu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white">
+                                <i class="fs-5 bi-clock"></i> <span class="ms-1 d-none d-sm-inline">Recent</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#menu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white">
+                                <i class="fs-5 bi-star"></i> <span class="ms-1 d-none d-sm-inline">Top Rated</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#menu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white">
+                                <i class="fs-5 bi-download"></i> <span class="ms-1 d-none d-sm-inline">Downloaded</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#menu4" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white">
+                                <i class="fs-5 bi-heart"></i> <span class="ms-1 d-none d-sm-inline">Playlists</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#menu4" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white">
+                                <i class="fs-5 bi-plus-square"></i> <span
+                                    class="ms-1 d-none d-sm-inline">Watchlist</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#menu4" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white">
+                                <i class="fs-5 bi-check-square"></i> <span
+                                    class="ms-1 d-none d-sm-inline">Completed</span> </a>
+                        </li>
+                        <li class="pt-4">General</li>
+                        <li class="nav-item">
+                            <a href="#menu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white">
+                                <i class="fs-5 bi-gear"></i> <span class="ms-1 d-none d-sm-inline">Settings</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#menu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white">
+                                <i class="fs-5 bi-door-open"></i> <span class="ms-1 d-none d-sm-inline">Log Out</span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-auto col-12 col-md-7 py-3 px-5 main-view">
+                <div class="row flex-nowrap">
+                    <div class="col-auto col-12 col-md-8 py-3">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="tabs" id="movies" data-bs-toggle="pill" data-bs-target="#movies-tab"
+                                    type="button" role="tab" aria-controls="movies-tab"
+                                    aria-selected="false">Movies</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="tabs active" id="tvshows" data-bs-toggle="pill"
+                                    data-bs-target="#tvshows-tab" type="button" role="tab" aria-controls="tvshows-tab"
+                                    aria-selected="true">TV Shows</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="tabs" id="anime" data-bs-toggle="pill" data-bs-target="#anime-tab"
+                                    type="button" role="tab" aria-controls="anime-tab"
+                                    aria-selected="false">Anime</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-auto col-12 col-md-4 py-3">
+                        <div class="search">
+                            <i class="bi-search"></i>
+                            <input type="text" class="form-control" placeholder="Search">
+                            <i class="bi-funnel"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade" id="movies-tab" role="tabpanel" aria-labelledby="movies">Movies
+                        Comming Soon .......</div>
+                    <div class="tab-pane fade show active" id="tvshows-tab" role="tabpanel" aria-labelledby="tvshows">
+                        <div id="carouselslides" class="carousel slide" data-bs-ride="carousel">
+                            <button type="button" data-bs-target="#carouselslides" class="carousel-watchlist"><i
+                                    class="bi-plus fs-4"></i>Watchlist</button>
+
+                            <!-- Indicators/dots -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselslides" data-bs-slide-to="0"
+                                    class="active"></button>
+                                <button type="button" data-bs-target="#carouselslides" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#carouselslides" data-bs-slide-to="2"></button>
+                            </div>
+                            <button type="button" data-bs-target="#carouselslides" class="carousel-watchnow">Watch
+                                Now</button>
+
+                            <!-- The slideshow/carousel -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/carousel1.jpg" alt="The Crown" class="d-block">
+                                    <div class="carousel-caption">
+                                        <h2>The Crown</h2>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/carousel1.jpg" alt="Chicago" class="d-block">
+                                    <div class="carousel-caption">
+                                        <h2>The Crown</h2>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/carousel1.jpg" alt="New York" class="d-block">
+                                    <div class="carousel-caption">
+                                        <h2>The Crown</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls/icons -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselslides"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselslides"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                        <h4 class="fw-bold mt-5 text-white">Popular on TinyMoviez</h4>
+                        <div class="row tinymoviez-div text-white mt-4">
+                            <div class="col-sm-4">
+                              <div class="card card1">
+                                <div class="card-body">
+                                  <h5 class="card-title">Loki</h5>
+                                  <i class="bi-star-fill"></i>
+                                  <i class="bi-star-fill"></i>
+                                  <i class="bi-star-fill"></i>
+                                  <i class="bi-star-fill"></i>
+                                  <i class="bi-star-half"></i>
+                                  <br />
+                                  <br />
+                                  <br />
+                                  <br />
+                                  <br />
+                                  <br />
+                                  <br />
+                                 <div class="d-flex justify-content-between fw-bold">
+                                     <div>6 Ep</div>
+                                     <div>Superhero</div>
+                                 </div>
+                                 <div class="d-flex justify-content-between mt-1">
+                                    <div><i class="bi-plus fs-4"></i></div>
+                                    <button type="button">Watch</button>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card card2">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Chernobyi</h5>
+                                      <i class="bi-star-fill"></i>
+                                      <i class="bi-star-fill"></i>
+                                      <i class="bi-star-fill"></i>
+                                      <i class="bi-star-fill"></i>
+                                      <i class="bi-star-fill"></i>
+                                      <br />
+                                      <br />
+                                      <br />
+                                      <br />
+                                      <br />
+                                      <br />
+                                      <br />
+                                     <div class="d-flex justify-content-between fw-bold">
+                                         <div>5 Ep</div>
+                                         <div>Mini Series</div>
+                                     </div>
+                                     <div class="d-flex justify-content-between mt-1">
+                                        <div><i class="bi-plus fs-4"></i></div>
+                                        <button type="button">Watch</button>
+                                    </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card card3">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Rick and Morty</h5>
+                                      <i class="bi-star-fill"></i>
+                                      <i class="bi-star-fill"></i>
+                                      <i class="bi-star-fill"></i>
+                                      <i class="bi-star-fill"></i>
+                                      <i class="bi-star-fill"></i>
+                                      <br />
+                                      <br />
+                                      <br />
+                                      <br />
+                                      <br />
+                                      <br />
+                                      <br />
+                                     <div class="d-flex justify-content-between fw-bold">
+                                         <div>49 Ep</div>
+                                         <div>Fantacy</div>
+                                     </div>
+                                     <div class="d-flex justify-content-between mt-1">
+                                        <div><i class="bi-plus fs-4 fw-bold"></i></div>
+                                        <button type="button">Watch</button>
+                                    </div>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                    </div>
+                    <div class="tab-pane fade" id="anime-tab" role="tabpanel" aria-labelledby="anime">Anime
+                        Comming Soon ........</div>
+                </div>
+            </div>
+            <div class="col-auto col-12 col-md-3 py-3 px-4 right-menu text-white">
+                <div class="d-flex justify-content-between align-items-center mt-1">
+                    <div><i class="bi-bell fs-4 fw-bold"></i></div>
+                    <div>Samantha<i class="bi-chevron-down px-1"></i><img src="images/userimg.jpg" height="30px" width="30px" class="rounded" alt="userimg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
