@@ -1,10 +1,14 @@
 body{
     font-size: 14px;
 }
+.side-menu::-webkit-scrollbar, .right-menu::-webkit-scrollbar, .main-view::-webkit-scrollbar {
+    width: 10px;
+}
 .side-menu, .right-menu {
     background-color: #21242D;
     height: 100vh;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 /* Tab Styles Start */
@@ -80,6 +84,11 @@ body{
 .carousel-indicators button.active{
     background-color: #00B9AE !important;
 }
+.carousel-control-prev .bi-chevron-left, .carousel-control-next .bi-chevron-right {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 0px 8px 5px 8px;
+    border-radius: 10px;
+}
 .carousel-caption{
     top: 10px;
     left: 10%;
@@ -95,7 +104,7 @@ body{
     padding: 0px 25px 7px 25px;
     border: none;
     background-color: rgba(255, 255, 255, 0.4);
-    color: rgba(255, 255, 255, 1);
+    color: #F9F9F9;
     border-radius: 10px;
     font-weight: bold;
 }
@@ -142,7 +151,7 @@ body{
     color: #00B9AE;
 }
 
-.tinymoviez-div button{
+.tinymoviez-div button, .right-menu button{
     background-color: #00B9AE;
     padding: 5px 25px;
     border-radius: 10px;
@@ -150,9 +159,9 @@ body{
     font-weight: bold;
 }
 
-.tinymoviez-div .bi-plus{
+.tinymoviez-div .bi-plus, .right-menu .bi-plus{
     background-color: rgba(255, 255, 255, 0.4);
-    color: rgba(255, 255, 255, 1);
+    color: #F9F9F9;
     border-radius: 10px;
     padding: 0px 10px 5px 10px;
 }
@@ -162,7 +171,59 @@ body{
 /* Right menu stles start */
 .right-menu .bi-bell{
     background-color: rgba(255, 255, 255, 0.4);
-    color: rgba(255, 255, 255, 1);
+    color: #F9F9F9;
     border-radius: 15px;
     padding: 0px 10px 7px 10px;
 }
+.right-menu .bi-chevron-left, .right-menu .bi-chevron-right{
+    vertical-align: text-bottom;
+}
+
+.right-menu .card{
+    background-color: #16181E;
+}
+.right-menu .progress{
+    height: 0.5rem;
+}
+.right-menu .progress-bar{
+    background-color: #00B9AE;
+}
+
+.right-menu .drop{
+    padding: 7px 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #F9F9F9;
+    border-radius: 10px;
+}
+
+.right-menu .watch{
+    padding: 7px 30px;
+    border: none;
+    background-color: #00B9AE;
+    border-radius: 10px;
+}
+
+.right-menu .card1, .right-menu .card2{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/rightpanelimg2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+
+.right-menu .card3{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/rightpanelimg3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    height: 100px;
+}
+
+.right-menu .card4{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/rightpanelimg4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    height: 100px;
+}
+/* Right menu stles end */
